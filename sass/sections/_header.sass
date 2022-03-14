@@ -1,0 +1,122 @@
+.header
+  &__top
+    display: flex
+    justify-content: space-between
+    padding-top: 20px
+  &__content
+    background-image: url(../../images/header-bg.png)
+    background-size: cover
+    background-position: top
+    background-repeat: no-repeat
+    padding-bottom: 20px
+    margin-top: -100px
+    min-height: calc(100vh - 50px)
+    &-link
+      &--active
+        font-weight: 700
+    &-box
+      display: flex
+      margin-left: 100%
+      margin-right: 30px
+      font-size: 18px
+      line-height: 21px
+      color: #fff
+    &-btn
+      font-family: 'Roboto Slab', serif
+      font-weight: 700
+      color: #fff
+      line-height: 32px
+      font-size: 24px
+      padding: 14px 88px
+      border-radius: 20px
+      background-color: rgba(255,255,255,0.5)
+      margin-left: 112px
+      display: inline-block
+      transform: translateY(-100px)
+      position: absolute
+      transition: all 0.3s
+      &:hover
+        background-color: #FFFFFF
+        color: #001E64
+  &-slider
+    max-width: 522px
+    padding-left: 112px
+    padding-top: 57px
+    padding-bottom: 135px
+    &__text
+      margin-bottom: 25px
+      font-size: 18px
+      line-height: 120%
+      color: #fff
+
+.logo
+  margin-left: 16px
+.phone
+  margin-top: 11px
+  margin-right: 43px
+.menu
+  margin-top: 16px
+  &__list
+    display: flex
+  &__item + .menu__item
+    margin-left: 30px
+  &__link
+    text-transform: uppercase
+    font-weight: 500
+    font-size: 18px
+    line-height: 21px
+    color: #001E64
+    &:hover
+      border-bottom: 1px solid #001E64
+
+.title
+  font-family: 'Roboto Slab', serif
+  font-weight: 700
+  font-size: 72px
+  line-height: 95px
+  color: #001E64
+  max-width: 589px
+  padding-top: 170px
+  padding-left: 112px
+  margin-bottom: 60px
+
+.slick
+  &-prev, &-next
+    background-color: transparent
+    border: none
+    cursor: pointer
+    padding: 0
+    position: absolute
+    left: 40px
+  &-prev
+    top: 0
+  &-next
+    bottom: 0
+  &-dots
+    list-style: none
+    position: absolute
+    left: 35px
+    top: 58px
+    bottom: 55px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    button
+      border: none
+      background-color: transparent
+      padding: 0
+      color: #fff
+      font-size: 24px
+      line-height: 28px
+      opacity: 0.5
+      cursor: pointer
+      &::before
+        content: '0'
+    li
+      &:nth-child(n + 10)
+        button
+          &::before
+            content: ''
+  &-active
+    button
+      opacity: 1
